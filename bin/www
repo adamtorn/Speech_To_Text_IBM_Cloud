@@ -21,6 +21,16 @@ app.set('port', port);
 
 var server = http.createServer(app);
 
+/*
+  convert stream audio to text
+*/
+
+/*--------------------------------------*/
+var io = require('socket.io').listen(server);
+
+require('../routes/convert')(io);
+/*--------------------------------------*/
+
 /**
  * Listen on provided port, on all network interfaces.
  */
