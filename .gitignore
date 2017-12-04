@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# unnecessary file
+*.mp3
+*.zip
